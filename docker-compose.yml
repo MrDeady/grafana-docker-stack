@@ -1,14 +1,14 @@
-version: "3.9"
+version: "4.0"
 services:
   grafana:
-    image: grafana/grafana:8.5.3-ubuntu
+    image: grafana/grafana:10.4.1-ubuntu
     ports:
       - "3000:3000"
     volumes:
       - grafana-data:/var/lib/grafana
       - grafana-configs:/etc/grafana
   prometheus:
-    image: prom/prometheus:v2.36.0
+    image: prom/prometheus:v2.51.0
     ports:
       - "9090:9090"
     volumes:
